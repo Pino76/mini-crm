@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FailedJobsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('getFailedsJob', [FailedJobsController::class, 'getFailedsJob'])->name('getFailedsJob');
+
+Route::get('prova', [FailedJobsController::class, 'prova'])->name('prova');
