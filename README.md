@@ -1,2 +1,2 @@
 # mini-crm
-raccolta di dati utente
+CRUD Restarting failed jobs
